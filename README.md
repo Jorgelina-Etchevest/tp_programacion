@@ -5,7 +5,9 @@ Tecnicatura Universitaria en Programación
 📍 Universidad Tecnológica Nacional
 
 ✨ Estudiantes
+
 Chiaravalloti Agustín
+
 Etchevest Jorgelina Carla 
 
 Comisión: 2
