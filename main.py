@@ -1,5 +1,8 @@
 import time
 import timeit
+import sys
+
+sys.setrecursionlimit(20000)
 
 #Método Quicksort con lista ordenada y el primer valor como pivote 
 
@@ -19,7 +22,7 @@ def quicksort(arr):
 
 
 # Lista 
-A = list(range(1, 101))
+A = list(range(1, 1001))
 print(quicksort(A))
 
 time.sleep(15)
@@ -50,7 +53,7 @@ def quicksort_media(arr):
 
         return quicksort_media(less) + equal + quicksort_media(greater)
 
-B = list(range(1, 101))
+B = list(range(1, 1001))
 print(quicksort_media(B))
 
 time.sleep(15)
@@ -63,8 +66,8 @@ print("Tiempo para una lista con pivote en primer elemento:", end_time - start_t
 print("Llamadas recursivas (pivote primero):", contador_primero)
 
 
-start_time = timeit.default_timer()
+start_time_media = timeit.default_timer()
 quicksort_media(B.copy())
-end_time = timeit.default_timer()
-print("Tiempo para una lista con pivote en la media de 3:", end_time - start_time)
+end_time_media = timeit.default_timer()
+print("Tiempo para una lista con pivote en la media de 3:", end_time_media - start_time_media)
 print("Llamadas recursivas (pivote media de 3):", contador_media)
