@@ -3,7 +3,7 @@
 contador_primero = 0
 
 def quicksort(arr):
-    global contador_primero
+    global contador_primero            
     contador_primero += 1
 
     if len(arr) <= 1:
@@ -23,11 +23,11 @@ def get_contador_primero():
 def mediana_de_tres(a, b, c):
     return sorted([a, b, c])[1]
 
-contador_media = 0
+contador_mediana = 0
 
-def quicksort_media(arr):
-    global contador_media
-    contador_media += 1
+def quicksort_mediana(arr):
+    global contador_mediana
+    contador_mediana += 1
 
     if len(arr) <= 1:
         return arr
@@ -41,7 +41,7 @@ def quicksort_media(arr):
         equal = [x for x in arr if x == pivot]
         greater = [x for x in arr if x > pivot]
 
-        return quicksort_media(less) + equal + quicksort_media(greater)
+        return quicksort_mediana(less) + equal + quicksort_mediana(greater)
     
-def get_contador_media():
-    return contador_media
+def get_contador_mediana():
+    return contador_mediana

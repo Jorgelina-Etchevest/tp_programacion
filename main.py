@@ -1,7 +1,7 @@
 import time
 import timeit
 import sys
-from modulo import get_contador_primero, quicksort, quicksort_media, get_contador_media
+from modulo import get_contador_primero, quicksort, quicksort_mediana, get_contador_mediana
 
 sys.setrecursionlimit(20000)
 
@@ -16,7 +16,7 @@ time.sleep(5)
 #valores son el primer valor, el ultimo y el del medio. 
 
 B = list(range(1, 1001))
-print(quicksort_media(B))
+print(quicksort_mediana(B))
 
 time.sleep(5)
 
@@ -29,7 +29,7 @@ print("Llamadas recursivas (pivote primero):", get_contador_primero())
 
 
 start_time_media = timeit.default_timer()
-quicksort_media(B.copy())
+quicksort_mediana(B.copy())
 end_time_media = timeit.default_timer()
 print("Tiempo para una lista con pivote en la media de 3:", end_time_media - start_time_media)
-print("Llamadas recursivas (pivote media de 3):", get_contador_media())
+print("Llamadas recursivas (pivote media de 3):", get_contador_mediana())
