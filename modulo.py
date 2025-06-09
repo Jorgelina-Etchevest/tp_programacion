@@ -17,7 +17,7 @@ def quicksort(arr):
 def get_contador_primero():
     return contador_primero
 
-#Función Quicksort_media. Pivot: media de tres valores: el primero, el último y el del medio.
+#Función Quicksort_mediana. Pivot: mediana de tres valores: el primero, el último y el del medio.
 
 
 def mediana_de_tres(a, b, c):
